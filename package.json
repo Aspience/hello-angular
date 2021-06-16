@@ -1,12 +1,13 @@
 {
   "name": "hello-angular",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "prettify": "prettier --ignore-path .gitignore --write \"src/**/*.{ts,html,scss,json}\""
   },
   "private": true,
   "dependencies": {
@@ -34,6 +35,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "prettier": "^2.3.1",
     "typescript": "~4.2.3"
   }
 }
